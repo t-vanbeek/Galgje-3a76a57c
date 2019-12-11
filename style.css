@@ -1,0 +1,23 @@
+html {
+    background-color: cornflowerblue;
+}
+
+.head {
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
