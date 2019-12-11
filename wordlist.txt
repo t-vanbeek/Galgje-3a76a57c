@@ -1,0 +1,12 @@
+class
+system
+grip
+shake
+attack
+number
+angle
+orange
+tacky
+rely
+jar
+touch
