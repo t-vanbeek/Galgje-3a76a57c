@@ -9,3 +9,18 @@
 </head>
 
 <body>
+    <div class="head">
+        <h1>Galgje</h1>
+    </div>
+    <div class="text">
+        <h3>Je hebt gekozen voor een willekeurig woord!</h3>
+    </div>
+    <div class="button">
+        <button type="button">Start Willekeurig</button>
+    </div>
+    <div class="img">
+        <img src="Afbeeldingen/END.png" alt="Galgje" />
+    </div>
+</body>
+
+</html>
