@@ -21,3 +21,17 @@ html {
     flex-wrap: wrap;
     align-content: flex-end;
 }
+.startbutton {
+    display: flex;
+    justify-content: center;
+    border: solid, rgb(255, 102, 0);
+    /* background-color: cornflowerblue; */
+    border-radius: 200px;
+    border-color: darkgreen;
+}
+.phpGalgWoord {
+    display: flex;
+    justify-content: center;
+    color: orangered;
+
+}
