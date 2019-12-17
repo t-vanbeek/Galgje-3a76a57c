@@ -21,12 +21,12 @@
     </div>
     <div class="button">
         <form method="POST">
-            <input type="text" name="WoordGalgje" id="WoordGalgje">
-            <button type="submit" name="Opslaan" id="Start">Start</button>
+            <input class="textinput" type="text" name="WoordGalgje" id="WoordGalgje" placeholder="Voer een woord in" />
+            <button class="start" type="submit" name="Opslaan" id="Start">opslaan</button>
         </form>
     </div>
     <div class="phpGalgWoord">
-        <h1>
+        <h2>
             <?php
             if (isset($_POST["Opslaan"])) {
                     setcookie("Galgwoord", $_POST["WoordGalgje"]);
@@ -34,18 +34,19 @@
                 }
             
             if (isset($_COOKIE["Galgwoord"])) {
-                echo ("Je hebt") . " " . $_COOKIE["Galgwoord"] . " " . "gekozen om mee te spelen!";
+                echo ("Je hebt") . " '" . $_COOKIE["Galgwoord"] . "' " . "gekozen om mee te spelen!";
             }
             ?>
-        </h1>
+        </h2>
     </div>
     <div class="img">
         <img src="END.png" alt="Galgje">
     </div>
     <div class="startbutton">
         <form>
-            <button class="startbutton" type="submit" formaction="">Begin het spel</button>
+            <button class="startbutton" type="submit" formaction="zelfspel.php">Begin het spel</button>
         </form>
+    </div>
 </body>
 
 </html>
