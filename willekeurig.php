@@ -16,7 +16,9 @@
         <h3>Je hebt gekozen voor een willekeurig woord!</h3>
     </div>
     <div class="button">
-        <button class="startbutton" type="submit" formaction="galgspel.php">Start Willekeurig</button>
+        <form>
+            <button class="startbutton" type="submit" formaction="galgspel.php">Start Willekeurig</button>
+        </form>
     </div>
     <div class="img">
         <img src="Afbeeldingen/END.png" alt="Galgje" />
