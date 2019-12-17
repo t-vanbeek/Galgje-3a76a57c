@@ -44,7 +44,7 @@
     </div>
     <div class="startbutton">
         <form>
-            <button class="startbutton" type="submit" formaction="zelfspel.php">Begin het spel</button>
+            <button class="startbutton" type="submit" formaction="galgspel.php">Begin het spel</button>
         </form>
     </div>
 </body>
