@@ -1,4 +1,4 @@
-class
+academy
 system
 grip
 shake
