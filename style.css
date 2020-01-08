@@ -72,8 +72,26 @@ button.startbutton {
     border-radius: 200px;
     color: ghostwhite;
 }
-
+/*
 .lijn {
     font-size: 50px;
     display: inline;
+}
+*/
+
+.letters {
+    display: flex;
+    justify-content: center;
+    flex-direction: wrap;
+}
+
+.Gewonnen {
+    text-align: center;
+    color: lawngreen;
+    text-shadow: green;
+}
+.Verloren {
+    text-align: center;
+    color: red;
+    text-shadow: maroon;
 }

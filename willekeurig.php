@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -32,7 +35,7 @@
     "touch"
     );
     $kiezen = array_rand($randomwoorden);
-    setcookie('woord' , $randomwoorden [$kiezen]);
+    $__SESSION['woord'] = $randomwoorden[$kiezen];
     ?>
     <div class="button">
         <form>

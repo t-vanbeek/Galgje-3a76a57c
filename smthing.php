@@ -1,7 +1,23 @@
 <?php
 session_start();
-function spelStart()
-{
+?>
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="style.css">
+<link href="icon.png" rel="icon" type="icon.png" />
+
+<head>
+    <title>Galgje | Spel</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Galgje</h1>
+    </div>
+    <?php
+    $aantalfouten = 0;
+    /* Woord wordt bekeken en ingesteld voor het spel */
     if (isset($_POST['button'])) {
         if ($_POST['button'] != 'reset') {
             $changelater = $_POST['button'];
@@ -19,29 +35,6 @@ function spelStart()
             header("refresh: 0");
         }
     }
-}
-
-?>
-<!DOCTYPE html>
-<html>
-
-<link rel="stylesheet" href="style.css">
-<link href="icon.png" rel="icon" type="icon.png" />
-<meta charset="UTF-8">
-
-<head>
-    <title>Galgje | Spel</title>
-</head>
-
-<body>
-    <div class="head">
-        <h1>Galgje</h1>
-    </div>
-    <?php
-    $aantalfouten = 0;
-    
-    spelStart();
-
     if (!isset($_SESSION['letters'])) {
         $_SESSION['letters'] = "";
     }
@@ -68,7 +61,7 @@ function spelStart()
         }
         echo "</div>";
     }
-    $aantalfouten = 0;
+$aantalfouten = 0;
     /* Woord fout of niet? */
     foreach ($keuze as $keuze_letters) {
         $correct = false;
@@ -77,10 +70,11 @@ function spelStart()
             if ($woord == $keuze_letters) {
                 echo "letter is goed";
                 $correct = true;
+                
+            
             }
-        }
-        /* Als woord fout is tel op */
-        if ($woord != $keuze_letters) {
+        } /* Als woord fout is tel op */
+        if (!$keuze_letters) {
             $aantalfouten++;
         }
     }

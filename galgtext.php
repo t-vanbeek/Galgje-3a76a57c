@@ -1,5 +1,5 @@
 <?php
-#session_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
 <link href="icon.png" rel="icon" type="icon.png" />
 
 <head>
-    <title>Galgje</title>
+    <title>Galgje | Zelf</title>
 </head>
 
 <body>
@@ -29,12 +29,12 @@
         <h2>
             <?php
             if (isset($_POST["Opslaan"])) {
-                    setcookie("Galgwoord", $_POST["WoordGalgje"]);
+                    $_SESSION["woord"] = $_POST["WoordGalgje"];
                     header("refresh: 0 ");
                 }
             
-            if (isset($_COOKIE["Galgwoord"])) {
-                echo ("Je hebt") . " '" . $_COOKIE["Galgwoord"] . "' " . "gekozen om mee te spelen!";
+            if (isset($_SESSION["woord"])) {
+                echo ("Je hebt") . " '" . $_SESSION["woord"] . "' " . "gekozen om mee te spelen!";
             }
             ?>
         </h2>
