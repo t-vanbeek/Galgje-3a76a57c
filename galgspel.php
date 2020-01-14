@@ -73,9 +73,9 @@ function spelStart()
     foreach ($keuze as $keuze_letters) {
         $correct = false;
         foreach ($woord_letters as $woord) {
-            echo "vergelijk: $woord en $keuze_letters";
+            echo "vergelijk: $woord en $keuze_letters <br>" . PHP_EOL;
             if ($woord == $keuze_letters) {
-                echo "letter is goed";
+                echo "letter is goed <br>" . PHP_EOL;
                 $correct = true;
             }
         }

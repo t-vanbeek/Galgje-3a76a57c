@@ -35,7 +35,7 @@ session_start();
     "touch"
     );
     $kiezen = array_rand($randomwoorden);
-    $__SESSION['woord'] = $randomwoorden[$kiezen];
+    $_SESSION['woord'] = $randomwoorden[$kiezen];
     ?>
     <div class="button">
         <form>
