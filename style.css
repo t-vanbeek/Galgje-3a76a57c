@@ -95,3 +95,14 @@ button.startbutton {
     color: red;
     text-shadow: maroon;
 }
+.mid {
+    display: inline-block;
+    width: 55%;
+}
+.right {
+    display: inline-block;
+    width: 44%;
+}
+.right img {
+    width: 50%;
+}

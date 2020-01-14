@@ -32,10 +32,13 @@ session_start();
     "tacky",
     "rely",
     "jar",
-    "touch"
+    "touch",
+    "train",
+    "array",
+    "random"
     );
     $kiezen = array_rand($randomwoorden);
-    $_SESSION['woord'] = $randomwoorden[$kiezen];
+    setcookie('woord' , $randomwoorden [$kiezen]);
     ?>
     <div class="button">
         <form>

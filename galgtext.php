@@ -29,12 +29,12 @@ session_start();
         <h2>
             <?php
             if (isset($_POST["Opslaan"])) {
-                    $_SESSION["woord"] = $_POST["WoordGalgje"];
+                    setcookie('woord', $_POST["WoordGalgje"]);
                     header("refresh: 0 ");
                 }
             
-            if (isset($_SESSION["woord"])) {
-                echo ("Je hebt") . " '" . $_SESSION["woord"] . "' " . "gekozen om mee te spelen!";
+            if (isset($_COOKIE["woord"])) {
+                echo ("Je hebt") . " '" . $_COOKIE["woord"] . "' " . "gekozen om mee te spelen!";
             }
             ?>
         </h2>
